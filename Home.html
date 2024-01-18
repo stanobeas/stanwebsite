@@ -1,0 +1,117 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="hi.css">
+        <style>
+        </style>
+             <title>
+                 my website
+                </title>
+            </head>
+            <body>
+                <div>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="cookieclicker.html">cookie clicker</a></li>
+            <li><a href="gambling.html">Gamling</a></li>
+
+          </ul>
+        </div>
+        <label style="background:yellow;">put your details in for purchases</label> 
+        <br>
+        <br>
+        Funds: £
+        <label id="funds">0</label>
+        <br>
+        <br>
+        <audio id="sound1" src="cash.mp3" preload="auto"></audio>
+    
+        <div style="float: left; width: 50%;">
+        <label for="fname">First name:</label> 
+        <input type="text" id="fname" name="fname"> <br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">Credit card number:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">cvv:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <label for="fname">addres:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <button onclick="Addfunds1()" style="width: 110px;">Add funds: £1</button>
+        <button onclick="Addfunds5()" style="width: 110px;">Add funds: £5</button>
+        <button onclick="Addfunds10()" style="width: 110px;">Add funds: £10</button>
+        <button onclick="Addfunds50()" style="width: 110px;">Add funds: £50</button>
+        </div>
+        <div style="float: left; width: 50%;">hi </div>
+
+<br>
+<br>
+<iframe width="787" height="443" src="https://www.youtube.com/embed/BbE2efxuytU" title="I&#39;ve NEVER seen so much FURNITURE...LARGEST ANTIQUE Mall" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <iframe width="787" height="443" src="https://www.youtube.com/embed/BbE2efxuytU" title="I&#39;ve NEVER seen so much FURNITURE...LARGEST ANTIQUE Mall" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <h1>this my new website :)</h1>
+        <div style="float: left; width: 35%;">
+        <img src="back.png" alt="alternatetext" style="width:700px;height:400px;border-radius:20%;">
+        <br>
+        <button onclick="buyjacob()" style="font-family: cursive;font-size: 50px;position: relative;width: 400px;height: 100px;color: green;background-color: greenyellow;">BUY</button>
+        <p>For sale! jacub hil : £12.50</p>
+        </div>
+        <div style="float: left; width: 35%;">
+        <img src="jack.png" alt="hi" style="width:700px;height:500px;">
+        <br>
+        <button onclick="buyjack()" style="font-family: cursive;font-size: 50px;position: relative;width: 400px;height: 100px;color: green;background-color: greenyellow;">BUY</button>
+        <p style="position: relative;">For sale!jack hughes: £44</p>
+        </div>
+        <div style="float: left; width: 5%;">
+        <img src="webcam (2).jpg" alt="hi" style="width:700px;height:500px;">
+        <br>
+        <button onclick="buystan()" style="font-family: cursive;font-size: 50px;position: relative;width: 400px;height: 100px;color: green;background-color: greenyellow;">BUY</button>
+        <p style="position: relative;">For sale! evil stan: £6.66</p>
+    </div>
+    <br>
+    <br>
+
+    <div style="float: left; width: 50%;">
+        
+    </div>
+    
+        <script>
+            function Addfunds5() {
+
+                let labelElement = document.getElementById("funds");
+                labelElement.textContent = parseFloat(labelElement.textContent) + 5
+            }
+            function Addfunds1() {
+
+let labelElement = document.getElementById("funds");
+labelElement.textContent = parseFloat(labelElement.textContent) + 1
+}
+function Addfunds10() {
+
+let labelElement = document.getElementById("funds");
+labelElement.textContent = parseFloat(labelElement.textContent) + 10
+}
+
+function Addfunds50() {
+
+let labelElement = document.getElementById("funds");
+labelElement.textContent = parseFloat(labelElement.textContent) + 50
+}
+function buyjacob(){
+    document.getElementById('sound1').play();
+    document.getElementById("funds").textContent = parseFloat(document.getElementById("funds").textContent) - 12.50
+}
+function buyjack(){
+    document.getElementById('sound1').play();
+    document.getElementById("funds").textContent = parseFloat(document.getElementById("funds").textContent) - 44
+}
+function buystan(){
+    document.getElementById('sound1').play();
+    document.getElementById("funds").textContent = parseFloat(document.getElementById("funds").textContent) - 6.66
+}
+        </script>
+    </body>
+</html>

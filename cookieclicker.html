@@ -1,0 +1,37 @@
+<!DOCTYPE html> 
+
+<html>
+    <head>
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="Contact.html">Contact</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="cookieclicker.html">cookie clicker</a></li>
+            <li><a href="gambling.html">Gamling</a></li>
+
+
+          </ul>
+          
+          <link rel="stylesheet" href="hi.css">
+        <style>
+            </style>
+             <title>
+                cookie clicker
+             </title>
+    </head>
+    <body>
+        £
+        <label id="cookies">0</label>
+        <br>
+        <button onclick="cookieclick()" style="width: 110px;">click cookie</button>
+        <br>
+        <button style="width: 110px;"> upgrade cookie</button>
+        <label id="upgrades">0</label>
+        <script>
+            function cookieclick(){
+                document.getElementById("cookies").textContent = parseFloat(document.getElementById("cookies").textContent) + parseFloat(document.getElementById("upgrades").textContent) + 1
+            }
+
+        </script>
+    </body>
+</html>
